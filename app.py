@@ -26,13 +26,13 @@ if st.button("Predict news category"):
         review_vectorized = vectorizer.transform([user_review])
         sentiment = model.predict(review_vectorized)[0]
         if sentiment == 1:
-            sentiment_label = "political news"
+            sentiment_label = "Political news"
         elif sentiment == 2:
-            sentiment_label = " sports news"
+            sentiment_label = "Sports news"
         elif sentiment == 3:
-            sentiment_label = "business news"
+            sentiment_label = "Business news"
         elif sentiment == 4:
-            sentiment_label = "environmental news"
+            sentiment_label = "Environmental news"
 
 
 
